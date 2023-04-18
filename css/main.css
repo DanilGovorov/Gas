@@ -1,0 +1,1839 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    background-color: #2D2D2D;
+}
+
+h1{
+    font-family: 'Russo One', sans-serif;
+}
+
+h2{
+    font-family: 'Russo One', sans-serif;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 63px;
+}
+
+
+
+
+
+/* header */
+
+
+
+
+.header-block{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.header-left{
+    display: flex;
+    gap: 23px;
+}
+
+
+
+.p_logo{
+    text-align: left;
+    padding-top: 40px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2194FF;
+}
+
+.img_line_logo{
+    padding-top: 22px;
+}
+
+.p-phone{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+    padding-top: 5px;
+    padding-right: 65px;
+}
+
+.p_vopros{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #2194FF;
+
+}
+
+
+
+/* main */
+
+
+.main{
+    background-color: #2D2D2D;
+}
+
+.day_night_and_weater{
+    display: flex;
+    gap: 34px;
+    padding-top: 34px;
+}
+
+.znaki_1{
+    display: flex;
+    gap: 8px;
+}
+
+.znaki_2{
+    display: flex;
+    gap: 8px;
+}
+
+.main_block{
+    display: flex;
+}
+
+.p_day_night{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+    padding-top: 4px;
+}
+
+.p_weather{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+    padding-top: 6px;
+}
+
+.h1_main{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 63px;
+    color: #2194FF;
+    padding-top: 12px;
+}
+
+.h2_main{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+    padding-top: 14px;
+}
+
+.button_main{
+    width: 395px;
+    height: 87px;
+    background: linear-gradient(#2194FF, #81C0FB, #108CFF );
+    border: 4px solid #108CFF;
+    border-radius: 2%;
+    margin-top: 40px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #F1F1F1;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.p_button_main{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+    padding-left: 18px;
+    padding-top: 13px;
+    padding-bottom: 72px;
+
+}
+
+.img_gruzovik_main{
+    position: absolute;
+    margin-left: -90px;
+}
+
+.img_strelka_main{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 280px;
+}
+
+
+
+
+/* section_price */
+
+
+.section_price{
+    background-color: #2d3238;
+}
+
+
+.h1_sec_price{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    color: #2194FF;
+    padding-top: 46px;
+}
+
+.price_block{
+    display: flex;
+}
+
+.price_left{
+    padding-top: 76px;
+}
+
+.p1_price_left{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #F1F1F1;
+}
+
+.p2_price_left{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2194FF;
+}
+
+.p3_price_left{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+    padding-top: 21px;
+}
+
+.button_price_left{
+    width: 155px;
+    height: 43px;
+    background: #2194FF;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #F1F1F1;
+    padding: 8px 35px 10px 33px;
+    border: none;
+    margin-top: 28px;
+}
+
+.p1_price_center{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F1F1F1;
+    opacity: 0.7;
+    padding-left: 150px;
+}
+
+.sootnochenie{
+    display: flex;
+    gap: 25px;
+}
+
+.p1_left_sootnochenie{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: rgba(241, 241, 241, 0.7);
+}
+
+.p2_left_sootnochenie{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(241, 241, 241, 0.7);
+}
+
+.p1_right_sootnochenie{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: rgba(241, 241, 241, 0.7);
+}
+
+.p2_right_sootnochenie{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(241, 241, 241, 0.7);
+}
+
+.price_center{
+    padding-top: 49px;
+}
+
+.left_sootnochenie{
+    padding-left: 180px;
+}
+
+.sootnochenie{
+    padding-top: 17px;
+}
+
+.img_gruzovik_price{
+    padding-top: 17px;
+}
+
+.button_price_right{
+    width: 155px;
+    height: 43px;
+    background: #2194FF;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #F1F1F1;
+    padding: 8px 35px 10px 33px;
+    border: none;
+    margin-top: 58px;
+}
+
+.p1_price_right{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #F1F1F1;
+}
+
+.p2_price_right{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2194FF;
+}
+
+.p3_price_right{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+    padding-top: 21px;
+}
+
+.price_right{
+    padding-top: 76px;
+    padding-left: 16px;
+}
+
+
+.img_gruzovik_price{
+    padding-bottom: 26px;
+}
+
+
+.img_strelka_1_price{
+    margin: auto;
+    position: absolute;
+    top: 1175px; left: 0; bottom: 0; right: 0;
+}
+
+.img_strelka_2_price{
+    margin: auto;
+    position: absolute;
+    top: 1187px; left: 0; bottom: 0; right: 0;
+}
+
+.img_strelka_3_price{
+    margin: auto;
+    position: absolute;
+    top: 1200px; left: 0; bottom: 0; right: 0;
+}
+
+
+
+
+
+/* section_advantages*/
+
+
+.h1_advantages{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #F1F1F1;
+    padding-top: 57px;
+}
+
+.adventages_block{
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 207px 265px 222px;
+    padding-top: 60px;
+    column-gap: 15px;
+    row-gap: 25px;
+    margin-left: -35px;
+}
+
+.p1_adventage{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2194FF;
+}
+
+.p2_adventage{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #F1F1F1;
+    padding-top: 14px;
+}
+
+.img_adv_1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_5{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_6{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_7{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_8{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_adv_9{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adventage_2{
+    padding-top: 10px;
+}
+
+.adventage_5{
+    padding-top: 40px;
+}
+
+.adventage_6{
+    padding-top: 35px;
+}
+
+.adventage_7{
+    padding-top: 30px;
+}
+
+.adventage_9{
+    padding-top: 25px;
+}
+
+.garantia_block{
+    display: flex;
+}
+
+.h3_garantia{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #F1F1F1;
+    width: 533px;
+}
+
+.garantia_span{
+    color: #2194FF;
+}
+
+.garantia_block{
+    padding-top: 40px;
+}
+
+.p1_garantia{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    color: #F1F1F1;
+    width: 533px;
+    height: 35px;
+    background-color: #2194FF;
+    padding: 6px 12px 5px 12px;
+    margin-top: 27px;
+}
+
+
+
+/* capacity_block */
+
+
+.capacity{
+    background-color: #2d3238;
+    margin-top: -7px;
+}
+
+.capacity_block{
+    padding-bottom: 64px;
+}
+
+.h1_capacity{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #2194FF;
+    padding-top: 34px;
+}
+
+.liters_block{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 35px;
+}
+
+.button_liters{
+    width: 164px;
+    height: 64px;
+    border-radius: 20px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #F1F1F1;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(241, 241, 241, 0.2);
+    border: none;
+}
+
+.button_2000l{
+    background: #2194FF;
+}
+
+
+.img_capacity_block{
+    position: absolute;
+    left:50%;
+    transform:translate(-50%, -50%);
+    margin-top: 150px;
+}
+
+.button_order{
+    background: linear-gradient(#2194FF, #81C0FB, #108CFF );
+    border: 4px solid #108CFF;
+    border-radius: 2%;
+    width: 295px;
+    height: 87px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F1F1F1;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 260px;
+}
+
+
+
+
+
+/* section_account */
+
+
+.h1_account{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #F1F1F1;
+    padding-top: 40px;
+}
+
+
+
+
+.okno_1{
+    width: 759px;
+    height: 320px;
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+}
+
+.okno_1_content{
+    display: flex;
+    gap: 23px;
+    z-index: 7;
+}
+
+.img_okno_1{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.p1_okno_1{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2194FF;
+    padding-top: 40px;
+}
+
+.p2_okno_1{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D2D2D;
+    padding-top: 3px;
+}
+
+.p3_okno_1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2D2D2D;
+}
+
+
+
+.okno_2{
+    position: absolute;
+    width: 799px;
+    height: 286px;
+    background: #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: -1;
+    margin-top: -160px;
+
+    
+}
+
+.okno_3{
+    position: absolute;
+    width: 839px;
+    height: 252px;
+    background: #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: -2;
+    margin-top: -160px;
+}
+
+
+
+
+/* questions_section */
+
+
+.questions{
+    background-color: #2d3238;
+    margin-top: 82px;
+    padding-bottom: 40px;
+}
+
+.h1_quest{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #2194FF;
+    padding-top: 37px;
+}
+
+.questions_block{
+    padding-top: 20px;
+}
+
+.quest1{
+    display: flex;
+    border-top: 1px solid #FFFFFF1A;
+    border-bottom: 1px solid #FFFFFF1A;
+    gap: 22px;
+}
+
+.quest2{
+    display: flex;
+    border-top: 1px solid #FFFFFF1A;
+    border-bottom: 1px solid #FFFFFF1A;
+    gap: 22px;
+}
+
+.quest3{
+    display: flex;
+    border-top: 1px solid #FFFFFF1A;
+    border-bottom: 1px solid #FFFFFF1A;
+    gap: 22px;
+}
+
+.quest4{
+    display: flex;
+    border-top: 1px solid #FFFFFF1A;
+    border-bottom: 1px solid #FFFFFF1A;
+    gap: 22px;
+}
+
+.quest5{
+    display: flex;
+    border-top: 1px solid #FFFFFF1A;
+    border-bottom: 1px solid #FFFFFF1A;
+    gap: 22px;
+}
+
+.p_quest{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #F1F1F1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.img_arrow_bot{
+    padding-left: 20px;
+}
+
+.img_arrow_top{
+    padding-left: 20px;
+}
+
+.p2_quest{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+}
+
+
+
+
+
+/* section_question_2 */
+
+.question_2_main{
+    display: flex;
+    gap: 32px;
+}
+
+.question_2_block{
+    padding-top: 55px;
+}
+
+.h1_quest_2{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #F1F1F1;
+    padding-left: 20px;
+}
+
+.name_form{
+    width: 402px;
+    height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-left: 22px;
+}
+
+.phone_form{
+    width: 402px;
+    height: 51px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+    padding-left: 22px;
+    margin-top: 24px;
+}
+
+.question_form{
+    width: 402px;
+    height: 112px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 20px;
+    padding-left: 22px;
+    margin-top: 24px;
+    display: block;
+}
+
+.button_quest_2{
+    width: 220px;
+    height: 47px;
+    background: #2194FF;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F1F1F1;
+    margin-top: 24px;
+    border: none;
+    margin-left: 20px;
+}
+
+
+.companii{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 59px;
+}
+
+.h1_map{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #2194FF;
+    padding-top: 34px;
+
+}
+
+.button_map{
+    border-radius: 11px;
+    width: 295px;
+    height: 87px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+    border: none;
+    background: linear-gradient(#2194FF, #81C0FB, #108CFF );
+    border: 4px solid #108CFF;
+    border-radius: 2%;
+    display: block;
+    margin-top: 11px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+/* section_map */
+
+
+.map_main{
+    display: flex;
+    padding-top: 40px;
+}
+
+.map_left{
+    height: 491px;
+    width: 567px;
+    border-radius: 33px 0 0 33px;
+    background: #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);  
+}
+
+.h1_map{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2194FF;
+    text-align: center;
+    padding-left: 40px;
+
+}
+
+
+.h1_map_2{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2194FF;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.h2_map{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B2639;
+    padding-left: 40px;
+    padding-top: 16px;
+
+}
+
+.img_line_map{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.p1_map{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #2194FF;
+    padding-left: 40px;
+    padding-top: 31px;
+}
+
+.p2_map{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1B2639;
+    padding-left: 40px;
+}
+
+.p3_map{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #2194FF;
+    padding-left: 40px;
+    padding-top: 45px;
+}
+
+.p4_map{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1B2639;
+    padding-left: 40px;
+
+}
+
+.politic{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p1_politic{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;  
+    text-decoration: none;
+    color: #F1F1F1;
+    text-decoration-line: underline;
+}
+
+.p2_politic{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;  
+    text-decoration: none;
+    color: #F1F1F1;
+    text-decoration-line: underline;
+}
+
+.politic{
+    margin-top: 40px;
+}
+
+
+
+
+/* media */
+
+
+
+@media (max-width: 1270px) {
+    .garantia_left{
+        display: none;
+    }
+    .capacity{
+        margin-top: 25px;
+    }
+    .garantia_block{
+        display: block;
+    }
+    .h3_garantia{
+        text-align: center;
+        width: auto;
+    }
+    .p1_garantia{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media (max-width: 1217px) {
+    .p1_price_left{
+        font-size: 29px;
+    }
+    .p2_price_left{
+        font-size: 19px;
+        line-height: 15px;
+    }
+    .p3_price_left{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .p1_price_right{
+        font-size: 29px;
+    }
+    .p2_price_right{
+        font-size: 19px;
+        line-height: 15px;
+    }
+    .p3_price_right{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .img_strelka_1_price{
+        display: none;
+    }
+    .img_strelka_2_price{
+        display: none;
+    }
+    .img_strelka_3_price{
+        display: none;
+    }
+    .p1_adventage{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .p2_adventage{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .h1_advantages{
+        font-size: 30px;
+    }
+    .adventages_block{
+        column-gap: 12px;
+        grid-template-columns: auto auto auto;
+    }
+    .h1_map{
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .button_map {
+        width: 230px;
+        height: 89px;
+    }
+    .map_left {
+        height: 491px;
+        width: 300px;
+        margin-left: 12.5%;
+    }
+}
+
+@media (max-width: 1108px) {
+    .img_gruzovik_price{
+        display: none;
+    }
+    .p1_price_center{
+        padding-left: 89px;
+    }
+    .left_sootnochenie {
+        padding-left: 117px;
+    }
+    .price_right{
+        padding-left: 85px;
+    }
+    .price_block{
+        justify-content: center;
+    }
+    .price_center {
+        padding-top: 107px;
+    }
+    .img_person_right{
+        display: none;
+    }
+    .companii{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .question_form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button_quest_2{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .h1_quest_2{
+        text-align: center;
+    }
+    .map_left {
+        height: 491px;
+        width: 300px;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 1108px) {
+    .question_form {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .map_main{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 983px) {
+    .price_block {
+        display: block;
+    }
+    .price_left{
+        text-align: center;
+    }
+    .price_center {
+        padding-top: 76px;
+    }
+    .p1_price_center{
+        text-align: center;
+        padding-left: 0px;
+    }
+    .sootnochenie{
+        justify-content: center;
+    }
+    .left_sootnochenie {
+        padding-left: 0px;
+    }
+    .price_right{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .button_price_right{
+        margin-top: 26px;
+    }
+    .p1_price_left {
+        font-size: 40px;
+    }
+    .p2_price_left {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .p3_price_left {
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .p1_price_right {
+        font-size: 40px;
+    }
+    .p2_price_right {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .p3_price_right {
+        font-size: 17px;
+        line-height: 19px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .img_gruzovik_main{
+        display: none;
+    }
+    .header-block{
+        display: block;
+    }
+    .header-left{
+        justify-content: center;
+    }
+    .p-phone{
+        text-align: right;
+        font-size: 16px;
+        padding-top: 0px;
+    }
+    .p_vopros{
+        text-align: right;
+        padding-right: 64px;
+        font-size: 13px;
+        margin-top: -12px;
+    }
+    .main_left{
+        width: 850px;
+    }
+    .day_night_and_weater{
+        justify-content: center;
+    }
+    .h1_main{
+        text-align: center;
+    }
+    .h2_main{
+        text-align: center;
+    }
+    .img_strelka_main{
+        display: none;
+    }
+    .button_main{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p_button_main{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .adventages_block {
+        grid-template-columns: auto auto;
+    }
+    .adventage_5 {
+        padding-top: 0px;
+    }
+    .adventage_6 {
+        padding-top: 0px;
+    }
+    .adventage_3{
+        padding-top: 30px;
+    }
+    .okno_1{
+        width: 600px;
+    }
+    .okno_2{
+        width: 665px;
+    }
+    .okno_3{
+        width: 720px;
+    }
+    .img_okno_1{
+        width: 200px;
+    }
+    .p3_okno_1 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .okno_1 {
+        width: 450px;
+    }
+    .okno_2 {
+        width: 500px;
+    }
+    .okno_3 {
+        width: 545px;
+    }
+    .img_okno_1 {
+        width: 130px;
+    }
+    .content_okno_1_right{
+        padding-right: 20px;
+    }
+    .h1_map {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .p1_politic{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    .p2_politic{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    .h1_map {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: 665px) {
+    .img_logo{
+        width: 180px;
+    }
+    .p_logo{
+        padding-top: 26px;
+    }
+    .p-phone{
+        font-size: 13px;
+    }
+    .p_vopros{
+        font-size: 10px;
+    }
+    .p_day_night{
+        font-size: 13px;
+    }
+    .p_weather{
+        font-size: 13px;
+    }
+    .h1_main{
+        font-size: 45px;
+        line-height: 46px;
+    }
+    .h2_main{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .p_button_main{
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .button_main{
+        border: none;
+        width: 300px;
+        height: 64px;
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .h1_sec_price{
+        font-size: 29px;
+        line-height: 36px;
+    }
+    .p1_price_left {
+        font-size: 30px;
+    }
+    .p2_price_left {
+        font-size: 18px;
+        line-height: 13px;
+    }
+    .p3_price_left {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .p1_price_right {
+        font-size: 30px;
+    }
+    .p2_price_right {
+        font-size: 18px;
+        line-height: 13px;
+    }
+    .p3_price_right {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .p1_price_center{
+        font-size: 17px;
+    }
+    .adventage_9 {
+        padding-top: 100px;
+    }
+    .p1_adventage {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .p2_adventage {
+        font-size: 12px;
+        line-height: 11px;
+    }
+    .h1_advantages {
+        font-size: 23px;
+    }
+    .h3_garantia{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .p1_garantia{
+        text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+        width: 300px;
+    }
+    .h1_capacity {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .liters_block {
+        flex-direction: column;
+        align-items: center
+    }
+    .img_capacity_block {
+        width: 300px;
+    }
+    .h1_quest{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .p_quest{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 592px) {
+    .okno_1 {
+        width: 290px;
+    }
+    .img_okno_1 {
+        width: 100px;
+    }
+    .p3_okno_1 {
+        font-size: 14px;
+        line-height: 11px;
+    }
+    .okno_2 {
+        width: 325px;
+    }
+    .okno_3 {
+        width: 355px;
+    }
+    .h1_account{
+        font-size: 27px;
+        line-height: 25px;
+    }
+    .h1_quest_2{
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .name_form {
+        width: 300px;
+    }
+    .phone_form {
+        width: 300px;
+    }
+    .question_form {
+        width: 300px;
+        height: 150px;
+    }
+    .name_form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .phone_form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .question_form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .companii{
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width: 451px) {
+    .button_map {
+        width: 181px;
+        height: 49px;
+        font-size: 17px;
+
+    }
+    .politic{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .p1_politic{
+        font-size: 7px;
+        font-weight: 700;
+    }
+    .p2_politic{
+        font-size: 7px;
+        font-weight: 700;
+    }
+}
+
+
+
+@media (max-width: 451px) {
+    .h1_sec_price {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .h1_advantages {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .adventages_block{
+        grid-template-columns: auto;
+    }
+    .adventage_9{
+        position: inherit;
+        transform: none;
+        padding-top: 20px;
+    }
+    .adventages_block{
+        grid-template-columns: auto;
+    }
+    .adventage_3{
+        padding-top: 0px;
+        margin-top: -210px;
+    }
+    .adventage_2 {
+        padding-top: 0px;
+        margin-top: -80px;
+    }
+    .adventage_4{
+        margin-top: -300px;
+    }
+    .adventage_5{
+        margin-top: -120px;
+    }
+    .p_quest {
+        font-size: 9px;
+    }
+    .h1_quest {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 440px) {
+    .h1_main{
+        font-size: 35px;
+        line-height: 36px;
+        padding-top: 40px;
+    }
+    .h2_main {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .day_night_and_weater{
+        gap: 25px;
+    }
+    .p_day_night {
+        font-size: 11px;
+    }
+    .p_weather {
+        font-size: 11px;
+    }
+    .img_logo {
+        width: 150px;
+    }
+    .p_logo{
+        padding-top: 26px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .header-left{
+        gap: 14px;
+    }
+    .button_main{
+        width: 222px;
+        height: 57px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .h3_garantia {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .p1_garantia{
+        width: 200px;
+        height: 45px;
+    }
+    .h1_capacity {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .liters_block{
+        gap: 20px;
+    }
+    .img_capacity_block{
+        width: 250px;
+    }
+    .img_okno_1 {
+        width: 75px;
+        padding-left: 15px;
+    }
+    .p3_okno_1 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .okno_1 {
+        width: 240px;
+    }
+    .okno_2 {
+        width: 260px;
+    }
+    .okno_3 {
+        width: 281px;
+    }
+    .img_compania{
+        width: 100px;
+    }
+    .h1_quest_2 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .name_form {
+        width: 190px;
+    }
+    .phone_form{
+        width: 190px;
+    }
+    .question_form{
+        width: 190px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-left {
+        gap: 9px;
+    }
+    .img_logo {
+        width: 100px;
+    }
+    .h1_main{
+        font-size: 30px;
+    }
+    .img_okno_1 {
+        width: 55px;
+    }
+    .okno_1_content{
+        gap: 10px;
+    }
+    .p3_okno_1 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .okno_1 {
+        width: 200px;
+    }
+    .okno_2 {
+        width: 220px;
+    }
+    .okno_3 {
+        width: 236px;
+    }
+}
